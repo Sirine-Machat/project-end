@@ -323,77 +323,62 @@ background-repeat: no-repeat;
 background-size: cover;
 
 }
-#form{
-    width: 600px;
-    margin:20vh auto 0 auto;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 25px;
-    padding-bottom: 36px;
-}
-#bt{
-  width: 50px;
-  height: 40px;
-    background-color: ghostwhite;
-    color: #0f2027;
-}
-#username{
-    font-size: large;
-}
-#email{
-    font-size: large;
-}
-#password{
-    font-size: large;
-}
-#number{
-    font-size: large;
-}
-#message{
-    font-size: large;
-}
-#form h1{
-    color: #0f2027;
-    text-align: center;
-
-}
-#form button{
-    padding: 10px;
-    margin-top: 10px;
-    width: 100%;
-    color: white;
-    background-color: rgb(41, 57 ,194);
-    border: none;
-    border-radius: 4px;
-}
-.input-control {
-    display: flex;
-    flex-direction: column;
-
-}
-.input-control input{
-    border:2px solid #f0f0f0;
-    border-radius: 4px;
-    display: block;
-    font-size: 12px;
-    padding: 10px;
-    width: 100%;
-}
-.input-control input:focus {
-    outline: 0;
-}
-.intput-control.success input{
-    border-color: #09c372;
-}
-.input-control.error input {
-    border-color:#ff3860;
-}
-.input-control .error{
-    color:#ff3860;
-    font-size: 9px;
- height: 13px;
-}
 .glod{
     color: gold;
+}
+.elm{
+    display: block;
+    flex-direction: column;
+    width: 700px;
+    height: 660px;
+    align-items: center;
+   background-color:transparent;
+  
+   border-radius: 2px;
+   margin-left: 550px;
+   margin-top: 2%;
+   box-shadow: #818181;
+   padding-left: 220px;
+  
+}
+#tt{
+    margin-bottom: 20px;
+    color: #fa3959;
+
+}
+#nn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#nn:hover{
+    background-color: beige;
+    font-weight: lighter;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+   width: 200px;
+   height: 50px;
+   font-size: x-large;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+
+ align-items: center;
+}
+form input{
+    height: 40px;
+    background-color: white;
+    font-size: 25px;
+}
+ form #bb{
+    background-color: #fa3959;
+    width: 200px;
+    height: 100px;
+   margin-top: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bold;
+   font-size: x-large;
+
 }
