@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>REX/</title>
+</head>
+<body class="html2">
+
+  <div class="container1">
+   <form id="form" name="loginForm" onsubmit="return validateForm(event) ">
+        <h1>Registration</h1>
+        <div class="input-control">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" required>
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+         <label for="password" >Password</label>
+         <input id="password"name="password" type="password" required>
+         <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="number">Phone Number</label>
+               <nember id="number" name="Phone Number" type="number" required>
+               <div class="error"></div>
+
+        </div>
+        <div class="input-control">
+            <label for="message">Message</label>
+               <textarea id="message" name="Message" type="Message" rows="4">
+                <button id="bt" type="submit">Send Your Request</button>
+               <div class="error"></div>
+            </div>
+               <button>Send Your Request</button>
+     
+        
+        
+    </form>
+    
+  </div>
+  
+  <a href="./index.html" class="btn" style="font-size: 36px;">Return</a>
+    <script src="javascript.js"></script>
+</body>
+</html>
