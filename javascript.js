@@ -17,21 +17,17 @@ search.classList.toggle('active');
 
 
 function validateForm(e) {
-    e.preventDefault()
-    var nam = document.loginForm.name.value
+    e.preventDefault();
     var password = document.loginForm.password.value
-  var Number = document.loginForm.Number.value
-  var namePattern = /^[a-zA-Z\s]+$/;
-  var phoneNumberPattern = /^\d{3}-\d{3}-\d{4}$/;
-  if (nam.value !=namePattern){
-    return alert('Enter words');
-   }
+  var Phone = document.loginForm.Phone.value
   if (password.length<5){
     return alert(`password length should more than 5`)
    }
-   
-   if(Number !=phoneNumberPattern ){
-    return alert ('Enter numbers')
- 
+   if (password.length >12){
+    return alert(`password length should less than 12`)
    }
+  
+
+
+   else return alert("Send success")
 }
