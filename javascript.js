@@ -4,20 +4,34 @@ document.querySelector('#search-icon').onclick = () => {
 search.classList.toggle('active');
 }
 
+
+
+   const stars =document.getElementsByClassName('bx bxs-star');
+
+   for(let i of stars) {
+       i.addEventListener('click', function() {
+           i.classList.toggle('glod');
+       })
+   }
+   
+
+
 function validateForm(e) {
     e.preventDefault()
-    var name = document.loginForm.name.value
+    var nam = document.loginForm.name.value
     var password = document.loginForm.password.value
-    var number=document.loginForm.number.value
-   if (name.length==0)
-    return alert(`name is required`);
-   if (password.length<5)
-    return alert(`password length should more than 5`);
+  var Number = document.loginForm.Number.value
+  var namePattern = /^[a-zA-Z\s]+$/;
+  var phoneNumberPattern = /^\d{3}-\d{3}-\d{4}$/;
+  if (nam.value !=namePattern){
+    return alert('Enter words');
    }
-   const stars=document.getElementsByClassName('bx bxs-star');
-
-for(let i of stars) {
-    i.addEventListener('click', function() {
-        i.classList.toggle('glod');
-    })
+  if (password.length<5){
+    return alert(`password length should more than 5`)
+   }
+   
+   if(Number !=phoneNumberPattern ){
+    return alert ('Enter numbers')
+ 
+   }
 }
